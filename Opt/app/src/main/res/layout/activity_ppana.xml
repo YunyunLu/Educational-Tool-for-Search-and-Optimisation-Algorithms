@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PointActivity">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="22dp"
+        android:text="Point-Pattern Matching"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="344dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:text="Each of the characters could be seen as a set of points \nP = {p1, p2, ..., pn}. \nLet Q = {q1, q2, ..., qn} be the given character, and \nP'(x) = {p'1, p'2 , ..., p'n} be a transformed version of P.\nLet these patterns be represented by the matrices, and then a P' that matches Q can be obtained by solving the unconstrained optimization problem "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="268dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:srcCompat="@drawable/ppobjectivefunction" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="129dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginBottom="167dp"
+        android:text="where F denotes the Frobeius norm."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="339dp"
+        android:layout_height="96dp"
+        android:onClick="pKnapClick"
+        android:text="The solution of this problem is solving this function and measuring the dissimilarity. as space limited, let's go to the next..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.932" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

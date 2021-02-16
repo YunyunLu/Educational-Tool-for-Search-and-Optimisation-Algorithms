@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Variable2Activity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginBottom="132dp"
+        app:layout_constraintBottom_toTopOf="@+id/button14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/variable" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="52dp"
+        android:text="Variables"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="41dp"
+        android:text="Sprung mass ms = 1000kg\nFront unsprung mass mfu = 70kg\nRear unsprung mass mru = 150kg\nRear damper coefficient αr\nFront damper coefficient αf\nPolar moment of inertia of the car J\n= 550kg-m*m\nFront coil stiffness kfs\nRear coil stiffness krs\nFront tyre stiffness kft = 20kg/mm\nRear tyre stiffness krt = 20kg/mm\nAxle-to-axle distance l = 3.2m"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button14"
+        app:layout_constraintStart_toStartOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:onClick="contraintsClick"
+        android:text="Contraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
